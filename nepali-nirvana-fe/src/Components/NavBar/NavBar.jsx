@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assests/img/logo.png";
 import classes from "./NavBar.module.css";
 
-function NavBar() {
+function NavBar(props) {
   return (
     <div className={classes.head}>
       <img src={logo} alt="Site Logo" className={classes.logo} />
@@ -11,7 +11,7 @@ function NavBar() {
         Nirvana
       </h1>
       <nav className={classes.nav}>
-        <li>Destinations</li>
+        <li onClick={() => props.destination()}>Destinations</li>
         <li>About Us</li>
         <li>Contact Us</li>
         <li className={classes.login}>Login</li>

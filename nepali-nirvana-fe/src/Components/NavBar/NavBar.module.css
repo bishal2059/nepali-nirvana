@@ -54,6 +54,11 @@
   background-color: rgb(30, 91, 102);
 }
 
-.nav li:hover {
+.nav .login:hover,
+.nav .sign:hover {
   color: whitesmoke;
+}
+
+.nav li:hover {
+  color: grey;
 }
