@@ -1,12 +1,12 @@
 .head {
   display: flex;
   height: 15vh;
-  width: 100vw;
+  width: 98vw;
 }
 
 .logo {
   height: 80%;
-  margin: 15px;
+  margin: 7.5px;
   border-radius: 30%;
 }
 
@@ -14,7 +14,7 @@
   width: 30%;
   color: rgb(102, 102, 243);
   align-self: center;
-  font-size: 50px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 1000;
 }
@@ -28,7 +28,7 @@
 
 .nav li {
   list-style: none;
-  font-size: 30px;
+  font-size: 15px;
   margin: 2%;
   cursor: pointer;
   transition: all 1s;
@@ -38,7 +38,7 @@
 .nav .sign {
   color: rgb(0, 0, 0);
   text-align: center;
-  padding-top: 18px;
+  padding-top: 9px;
   height: 30%;
   width: 10%;
   background-color: skyblue;

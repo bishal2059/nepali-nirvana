@@ -4,27 +4,27 @@
 }
 
 .tag {
-  margin: 2%;
+  margin: 1%;
   padding: 2%;
   display: flex;
   flex-direction: column;
 }
 
 .tag h1 {
-  font-size: 100px;
-  margin-bottom: 7px;
+  font-size: 50px;
+  margin-bottom: 3.5px;
 }
 
 .tag h2 {
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 300;
 }
 
 .tag section p {
   border-radius: 20px;
-  font-size: 40px;
+  font-size: 20px;
   width: fit-content;
-  padding: 20px;
+  padding: 10px;
   cursor: pointer;
   background-color: lightblue;
   transition: all 1s;
