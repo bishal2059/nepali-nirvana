@@ -1,7 +1,12 @@
 import "./App.css";
+import Main from "./Pages/main/Main";
 
 function App() {
-  return <div className="App">The Page is under construction</div>;
+  return (
+    <div className="App">
+      <Main />
+    </div>
+  );
 }
 
 export default App;

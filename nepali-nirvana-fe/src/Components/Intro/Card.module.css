@@ -1,0 +1,28 @@
+p {
+  margin: 0;
+}
+.card {
+  height: fit-content;
+  width: fit-content;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card img {
+  padding: 15px;
+  border-radius: 10%;
+}
+
+.card .name {
+  padding-left: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.card .location {
+  font-size: 20px;
+  margin: 15px;
+}
