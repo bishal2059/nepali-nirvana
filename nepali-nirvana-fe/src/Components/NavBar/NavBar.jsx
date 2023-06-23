@@ -12,7 +12,7 @@ function NavBar(props) {
       </h1>
       <nav className={classes.nav}>
         <li onClick={() => props.destination()}>Destinations</li>
-        <li>About Us</li>
+        <li onClick={() => props.about()}>About Us</li>
         <li>Contact Us</li>
         <li className={classes.login}>Login</li>
         <li className={classes.sign}>Sign Up</li>

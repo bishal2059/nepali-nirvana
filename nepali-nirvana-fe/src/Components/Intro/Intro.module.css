@@ -43,6 +43,6 @@
   background-position: 50% 50%;
   display: flex;
   flex-direction: column;
-  background-image: url("../../assests/img/poster.avif");
+  background-image: url("../../assests/img/poster.jpg");
   justify-content: space-between;
 }

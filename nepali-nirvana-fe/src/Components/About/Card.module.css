@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  margin: 2%;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card img {
+  flex-basis: 20%;
+  margin: 3%;
+}
+
+.card main {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1%;
+  transition: all 1s;
+}
+
+.card main:hover {
+  color: rgb(0, 128, 122);
+}
+.card section {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1.5%;
+}
