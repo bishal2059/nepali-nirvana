@@ -9,8 +9,10 @@ import classes from "./About.module.css";
 import bags from "../../assests/icons/bags.png";
 import map from "../../assests/icons/map.png";
 import search from "../../assests/icons/search.png";
+import { useNavigate } from "react-router-dom";
 
 function About(props) {
+  const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -64,7 +66,15 @@ function About(props) {
               setactive(2);
             }}
           />
-          <p className={classes.discover}>Discover New Places &gt;</p>
+          <p
+            className={classes.discover}
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("/login");
+            }}
+          >
+            Discover New Places &gt;
+          </p>
         </div>
       </div>
       <h1 className={classes.plan}>Plan your Vacation!</h1>

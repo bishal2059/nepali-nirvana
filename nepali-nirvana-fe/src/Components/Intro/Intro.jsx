@@ -3,8 +3,10 @@ import Card from "./Card";
 import classes from "./Intro.module.css";
 import muktinath from "../../assests/img/muktinath.jpeg";
 import swoyambhu from "../../assests/img/swoyambhu.jpeg";
+import { useNavigate } from "react-router-dom";
 
 function Intro() {
+  const navigate = useNavigate();
   return (
     <div className={classes.intro}>
       <div className={classes.tag}>
@@ -16,7 +18,13 @@ function Intro() {
           Search your desired location, plan your trips with us <br />
           and share your experience in our community.
         </h2>
-        <section className="login">
+        <section
+          className="login"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/login");
+          }}
+        >
           <p>Get Started!</p>
         </section>
       </div>

@@ -19,7 +19,7 @@ function Main() {
     contactRef?.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div>
+    <>
       <NavBar
         destination={destinationScroll}
         about={aboutRefScroll}
@@ -29,7 +29,7 @@ function Main() {
       <Destination passref={destinationRef} />
       <About passref={aboutRef} />
       <Footer passref={contactRef} />
-    </div>
+    </>
   );
 }
 
