@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logincontainer {
+ 
+  width: 80%;
+  height: 40vw;
+  margin-inline: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ 
+  border-radius: 16px;
+}
+.imagecontainer {
+  border-radius: 8px 0px 0px 8px;
+  width: 50%;
+  background-image: url("../../assests/img/treekingimages.jpg");
+  background-size: cover;
+}
+.imagecontainer h1 {
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+.rightcontainer {
+  background-color: #b3cde0;
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.rightcontainer h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+.rightcontainer p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.rightcontainer form input {
+  display: block;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  padding: 0.9em 1em;
+}
+.rightcontainer form input:focus {
+  outline: none;
+}
+.rightcontainer form {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+.rightcontainer button {
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: medium;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.signinbtn {
+  background-color: #1f2334;
+  color: white;
+}
+hr {
+  width: 50%;
+  margin-top: 10px;
+}
+.googlebtn {
+  width: 50%;
+}
+.rightcontainer a {
+  text-decoration: none;
+}
