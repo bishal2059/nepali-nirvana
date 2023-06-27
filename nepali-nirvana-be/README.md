@@ -22,4 +22,4 @@ In deployment make sure to uncomment the **FOR DEPLOYMENT** code in the app.js f
 
 ## POSTMAN Collection:
 
-The Postman collection can be used to: [POSTMAN]()
+The Postman collection can be used to: [POSTMAN](https://www.postman.com/lunar-star-564635/workspace/nepali-nirvana)
