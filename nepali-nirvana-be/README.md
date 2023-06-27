@@ -5,7 +5,16 @@ Follow the steps, as shown in project README.md
 ## Configuration:
 
 1. Make sure to create and .env file in the root with the following attributes:
-   PORT=8000
+
+```
+PORT=8000
+MONGO_URL= //Use MongoDB Connect URI
+ACCESS_TOKEN_SECRET= //Random hex string
+REFRESH_TOKEN_SECRET= //Random hex string
+CLIENT_ID= //Client Id for Google OAuth
+CLIENT_SECRET= //Client Secret for Google OAuth
+
+```
 
 ### To start server:
 
