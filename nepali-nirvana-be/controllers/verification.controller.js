@@ -3,7 +3,7 @@ const path = require("path");
 const { verifyUser } = require("../models/user.model");
 
 const redirectPage = fs.readFileSync(
-  path(__dirname, "..", "services", "verify.redirect.html"),
+  path.join(__dirname, "..", "services", "verify.redirect.html"),
   "utf-8"
 );
 

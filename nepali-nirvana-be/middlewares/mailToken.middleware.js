@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const config = require("../services/config");
 
 const redirectPage = fs.readFileSync(
-  path(__dirname, "..", "services", "verify.redirect.html"),
+  path.join(__dirname, "..", "services", "verify.redirect.html"),
   "utf-8"
 );
 

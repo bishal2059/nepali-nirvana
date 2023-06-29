@@ -3,7 +3,9 @@ const {
   httpEmailVerificationHandler,
 } = require("../controllers/verification.controller");
 
-const { mailTokenVerification } = require("../middleware/mailToken.middleware");
+const {
+  mailTokenVerification,
+} = require("../middlewares/mailToken.middleware");
 
 const verifyRoute = express.Router();
 
