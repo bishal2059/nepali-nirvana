@@ -43,10 +43,10 @@ const usersSchema = new mongoose.Schema({
       validator: (v) => v === "Male" || v === "Female",
       message: (props) => `${props.value} is invalid gender`,
     },
-    verified: {
-      type: Boolean,
-      required: true,
-    },
+  },
+  verified: {
+    type: Boolean,
+    required: true,
   },
 });
 

@@ -8,6 +8,10 @@ const signUpRoute = require("./routes/signup.route");
 const cookieParser = require("cookie-parser");
 const passport = require("passport");
 const { getGoogleUser } = require("./models/user.model");
+const dashboardRoute = require("./routes/dashboard.route");
+const { authenticateUser } = require("./middlewares/authenticate.middleware");
+const { checkVerifiedUser } = require("./middlewares/verify.middleware");
+const verifyRoute = require("./routes/verify.route");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
 const app = express();
@@ -29,8 +33,10 @@ passport.use(
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
-        const user = await getGoogleUser(profile._json.email);
-        console.log(user);
+        const user = await getGoogleUser(
+          profile._json.email,
+          profile._json.email_verified
+        );
         done(null, user);
       } catch (error) {
         done(error);
@@ -49,5 +55,7 @@ passport.use(
 
 app.use("/login", loginRoute);
 app.use("/signup", signUpRoute);
+app.use("/verify", verifyRoute);
+app.use("/dashboard", authenticateUser, checkVerifiedUser, dashboardRoute);
 
 module.exports = app;

@@ -20,10 +20,10 @@ const getUser = async function (email, password) {
   }
 };
 
-const getGoogleUser = async function (email) {
+const getGoogleUser = async function (email, verified = false) {
   try {
-    console.log(email);
     const user = await userModel.findOne({ email: email }, { __v: 0 });
+    await userModel.findOneAndUpdate({ email: email }, { verified: verified });
     return user;
   } catch (err) {
     throw Error("User not found");
@@ -59,4 +59,26 @@ const createNewUser = async function (userData) {
   }
 };
 
-module.exports = { createNewUser, getUser, getGoogleUser };
+const getUserWithId = async function (userId) {
+  try {
+    const user = await userModel.findById(userId, { __v: 0 });
+    return user;
+  } catch (err) {
+    return { error: "User not Verified" };
+  }
+};
+
+const verifyUser = async function (userId) {
+  await userModel.findOneAndUpdate(
+    { _id: userId },
+    { $set: { verified: true } }
+  );
+};
+
+module.exports = {
+  createNewUser,
+  getUser,
+  getGoogleUser,
+  getUserWithId,
+  verifyUser,
+};
