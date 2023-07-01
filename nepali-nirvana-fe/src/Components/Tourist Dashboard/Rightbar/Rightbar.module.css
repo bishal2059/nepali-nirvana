@@ -1,0 +1,70 @@
+.Rightbar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.userdetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.userdetails img {
+  width: 80px;
+}
+.userdetails button{
+  color: white;
+  background-color: #03396c ;
+  border-radius: 2px;
+  padding: 10px;
+}
+.icon {
+  width: fit-content;
+  background-color: aliceblue;
+  border-radius: 8px;
+}
+.transportion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.transportionicon {
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+  width: 40vmin;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 9s infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+.wrapper img {
+  width: 314px;
+  height: 300px;
+}

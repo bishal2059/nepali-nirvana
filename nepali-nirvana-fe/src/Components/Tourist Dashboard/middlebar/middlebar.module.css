@@ -1,0 +1,20 @@
+.downcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.middleseeall {
+  display: flex;
+  justify-content: left;
+}
+
+.destination {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.5%;
+  row-gap: 1.5%;
+}
+
+.destination > {
+  padding: 5px;
+}

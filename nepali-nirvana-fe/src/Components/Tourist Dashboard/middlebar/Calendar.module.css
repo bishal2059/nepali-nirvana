@@ -1,0 +1,15 @@
+.halfcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.calendar{
+    margin-top: 5px;
+}
+.resortcontainer{
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  
+}

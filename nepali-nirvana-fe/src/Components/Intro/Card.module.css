@@ -1,0 +1,29 @@
+p {
+  margin: 0;
+}
+.card {
+  height: fit-content;
+  width: inherit;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card img {
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.card .name {
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2.5px;
+}
+
+.card .location {
+  font-size: 12px;
+  margin: 7.5px;
+}

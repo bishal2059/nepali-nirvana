@@ -1,0 +1,50 @@
+.cart h1 {
+  margin: 0;
+  padding: 0;
+}
+.middle {
+  background-color: azure;
+  padding-left: 20px;
+  margin: 5px;
+}
+.middle input {
+  display: block;
+  width: 500px;
+  height: 40px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+.middle input:focus {
+  outline: none;
+}
+.middle button {
+  border: 1px solid black;
+  padding-inline: 15px;
+  padding-block: 8px;
+  border-radius: 2px;
+  background-color: aquamarine;
+}
+.searchbox {
+  display: flex;
+  gap: 5px;
+}
+
+main img {
+  width: 300px;
+  border-radius: 10px;
+}
+.middle button:hover {
+  background-color: brown;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.detailcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,48 @@
+.footer {
+  background-color: #27303b;
+  display: flex;
+  flex-direction: column;
+}
+.footer .contact {
+  display: flex;
+  justify-content: space-around;
+  margin: 3%;
+}
+.footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.socialimg {
+  height: 50%;
+  padding: 1%;
+}
+.footer .copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3%;
+  color: whitesmoke;
+}
+
+.contacts {
+  display: flex;
+  width: 50%;
+}
+
+.title {
+  margin: 3%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.info {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.icon {
+  margin: 3%;
+}

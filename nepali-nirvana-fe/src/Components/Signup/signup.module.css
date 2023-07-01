@@ -1,0 +1,93 @@
+.Signupcontainer {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.Signupform {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #e7eff6;
+  border-radius: 8px;
+}
+.Signupform h1 {
+  color: #63ace5;
+  font-weight: 600;
+}
+
+.Signupimagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-image: url("../../assests/img/signup.jpg");
+  background-size: cover;
+  border-radius: 8px;
+}
+.Signupform form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Signupform form input,
+.Signupform form select {
+  display: block;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  padding: 0.9em 1em;
+  font-size: medium;
+}
+
+.Signupform form input:focus,
+.Signupform form select:focus {
+  outline: none;
+}
+.Signupform form select option {
+  display: block;
+  width: 100%;
+}
+.Signupform button {
+  color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: medium;
+  padding: 3%;
+  cursor: pointer;
+  background-color: #2a4d69;
+}
+.Signupform a {
+  text-decoration: none;
+}
+
+.home {
+  position: absolute;
+  width: fit-content;
+  top: 1%;
+  right: 10%;
+  color: whitesmoke;
+  background-color: grey;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+}
+
+.already {
+  padding: 3%;
+}

@@ -1,0 +1,95 @@
+.logincontainer {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 16px;
+}
+.imagecontainer {
+  border-radius: 8px 0px 0px 8px;
+  width: 50%;
+  background-image: url("../../assests/img/treekingimages.jpg");
+  background-size: cover;
+}
+.rightcontainer {
+  background-color: #b3cde0;
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.rightcontainer h1 {
+  color: black;
+  font-weight: 500;
+  font-size: 3rem;
+}
+.rightcontainer p {
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+  font-weight: 350;
+}
+.rightcontainer form input {
+  display: block;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  padding: 0.9em 1em;
+  font-size: medium;
+}
+.rightcontainer form input:focus {
+  outline: none;
+}
+.rightcontainer form {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+.rightcontainer button {
+  border: 1px solid #e9ecef;
+  width: 50%;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: medium;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.signinbtn {
+  background-color: #1f2334;
+  color: white;
+}
+.hr {
+  width: 50%;
+  margin-top: 10px;
+}
+.googlebtn {
+  width: 50%;
+}
+.rightcontainer a {
+  text-decoration: none;
+}
+
+.gotosignup {
+  padding: 2%;
+  font-weight: 600;
+}
+
+.home {
+  position: absolute;
+  width: fit-content;
+  top: 1%;
+  right: 10%;
+  color: whitesmoke;
+  background-color: grey;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}

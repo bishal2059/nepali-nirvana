@@ -1,0 +1,20 @@
+.filter {
+  padding: 0.5%;
+  margin-left: 2px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 44.1rem;
+}
+.box input {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.filter h1 {
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+.filter h2 {
+  font-size: medium;
+}
